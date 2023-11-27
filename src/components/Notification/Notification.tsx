@@ -3,9 +3,8 @@ import { Alert, AlertTitle, Snackbar } from "@mui/material";
 import {
   clearNotification,
   selectNotification,
-  useAppSelector,
-  useAppDispatch,
-} from "@/stores";
+} from "@/components/Notification";
+import { useAppSelector, useAppDispatch } from "@/stores";
 
 export const Notification = () => {
   const dispatch = useAppDispatch();

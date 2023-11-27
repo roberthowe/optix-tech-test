@@ -11,8 +11,8 @@ import {
   GridRenderCellParams,
 } from "@mui/x-data-grid";
 
-import { useGetMoviesQuery } from "@/features/movies";
-import { setSelectedMovie, useAppDispatch } from "@/stores";
+import { setSelectedMovie, useGetMoviesQuery } from "@/features/movies";
+import { useAppDispatch } from "@/stores";
 
 const tableColumns = [
   { field: "title", headerName: "Title", width: 200, sortable: false },

@@ -1,8 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 
+import notificationReducer from "@/components/Notification/NotificationSlice";
 import { moviesApi } from "@/features/movies";
-import notificationReducer from "@/stores/NotificationSlice";
-import selectedMoviesSliceReducer from "@/stores/SelectedMovieSlice";
+import selectedMoviesSliceReducer from "@/features/movies/components/SelectedMovieSlice";
 
 export const store = configureStore({
   reducer: {
